@@ -1,33 +1,23 @@
-ÊµÑéÆ÷²Ä:
-	MiniSTM32F103¿ª·¢°åV3°æ±¾
+å®žéªŒå™¨æ:
+	MiniSTM32F103å¼€å‘æ¿V3ç‰ˆæœ¬
 	
-ÊµÑéÄ¿µÄ:
-	Ñ§Ï°STM32ÄÚ²¿ADCµÄÊ¹ÓÃ
+å®žéªŒç›®çš„:
+	å­¦ä¹ STM32å†…éƒ¨ADCçš„ä½¿ç”¨
 	
-Ó²¼þ×ÊÔ´:
-	1,DS0(Á¬½ÓÔÚPA8) 
-	2,´®¿Ú1(²¨ÌØÂÊ:9600,PA9/PA10Á¬½ÓÔÚ°åÔØUSB×ª´®¿ÚÐ¾Æ¬CH340ÉÏÃæ)
-	3,ALIENTEK 2.8/3.5/4.3/7´çTFTLCDÄ£¿é(Í¨¹ýGPIOÇý¶¯,Á¬½Ó¹ØÏµ¼ûlcd.h) 
-	4,ADC(STM32ÄÚ²¿ADC1,Í¨µÀ1,¼´:ADC1_CH1)
+ç¡¬ä»¶èµ„æº:
+	1,DS0(è¿žæŽ¥åœ¨PA8) 
+	2,ä¸²å£1(æ³¢ç‰¹çŽ‡:9600,PA9/PA10è¿žæŽ¥åœ¨æ¿è½½USBè½¬ä¸²å£èŠ¯ç‰‡CH340ä¸Šé¢)
+	3,ALIENTEK 2.8/3.5/4.3/7å¯¸TFTLCDæ¨¡å—(é€šè¿‡GPIOé©±åŠ¨,è¿žæŽ¥å…³ç³»è§lcd.h) 
+	4,ADC(STM32å†…éƒ¨ADC1,é€šé“1,å³:ADC1_CH1)
 	
-ÊµÑéÏÖÏó:
-	±¾ÊµÑéÍ¨¹ýSTM32ÄÚ²¿ADC1¶ÁÈ¡Í¨µÀ1£¨PA1£©ÉÏÃæµÄµçÑ¹£¬ÔÚLCDÄ£¿éÉÏÃæÏÔÊ¾ADC×ª»»ÖµÒÔ¼°»»Ëã³ÉµçÑ¹ºó
-	µÄµçÑ¹Öµ¡£
+å®žéªŒçŽ°è±¡:
+	æœ¬å®žéªŒé€šè¿‡STM32å†…éƒ¨ADC1è¯»å–é€šé“1ï¼ˆPA1ï¼‰ä¸Šé¢çš„ç”µåŽ‹ï¼Œåœ¨LCDæ¨¡å—ä¸Šé¢æ˜¾ç¤ºADCè½¬æ¢å€¼ä»¥åŠæ¢ç®—æˆç”µåŽ‹åŽ
+	çš„ç”µåŽ‹å€¼ã€‚
 	
-×¢ÒâÊÂÏî:  
-	1,4.3´çºÍ7´çÆÁÐèÒª±È½Ï´óµçÁ÷,USB¹©µç¿ÉÄÜ²»×ã,ÇëÓÃÍâ²¿µçÔ´¹©µç(5VµçÔ´£¬½ÓVOUT2¼´¿É).
-	2,±¾Àý³ÌÔÚLCD_Initº¯ÊýÀïÃæ(ÔÚILI93xx.c),ÓÃµ½ÁËprintf,Èç¹û²»³õÊ¼»¯´®¿Ú1,½«µ¼ÖÂÒº¾§ÎÞ·¨ÏÔÊ¾!! 
-	3,LCDÄ£¿éÔÚ¿ª·¢°åµÄLCD½Ó¿ÚÉÏÃæ£¬±ØÐë¿¿ÓÒ²å
-	4,STM32F103RCT6µÄ²Î¿¼µçÑ¹ºãÎªVDDA£¨¼´3.3V£©
-	5,ADCµÄ×î´óÊäÈëµçÑ¹ÊÇ3.3V,Çë²»Òª³¬¹ýÕâ¸öÖµ.
+æ³¨æ„äº‹é¡¹:  
+	1,4.3å¯¸å’Œ7å¯¸å±éœ€è¦æ¯”è¾ƒå¤§ç”µæµ,USBä¾›ç”µå¯èƒ½ä¸è¶³,è¯·ç”¨å¤–éƒ¨ç”µæºä¾›ç”µ(5Vç”µæºï¼ŒæŽ¥VOUT2å³å¯).
+	2,æœ¬ä¾‹ç¨‹åœ¨LCD_Initå‡½æ•°é‡Œé¢(åœ¨ILI93xx.c),ç”¨åˆ°äº†printf,å¦‚æžœä¸åˆå§‹åŒ–ä¸²å£1,å°†å¯¼è‡´æ¶²æ™¶æ— æ³•æ˜¾ç¤º!! 
+	3,LCDæ¨¡å—åœ¨å¼€å‘æ¿çš„LCDæŽ¥å£ä¸Šé¢ï¼Œå¿…é¡»é å³æ’
+	4,STM32F103RCT6çš„å‚è€ƒç”µåŽ‹æ’ä¸ºVDDAï¼ˆå³3.3Vï¼‰
+	5,ADCçš„æœ€å¤§è¾“å…¥ç”µåŽ‹æ˜¯3.3V,è¯·ä¸è¦è¶…è¿‡è¿™ä¸ªå€¼.
 	   
-
-					ÕýµãÔ­×Ó@ALIENTEK
-					2014-3-09
-					¹ãÖÝÊÐÐÇÒíµç×Ó¿Æ¼¼ÓÐÏÞ¹«Ë¾
-					µç»°£º020-38271790
-					´«Õæ£º020-36773971
-					¹ºÂò£ºhttp://shop62103354.taobao.com
-					http://shop62057469.taobao.com
-					¹«Ë¾ÍøÕ¾£ºwww.alientek.com
-					¼¼ÊõÂÛÌ³£ºwww.openedv.com
